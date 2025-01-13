@@ -49,3 +49,6 @@ array3 = np.concat([array1, array2], axis=0)
 print(array3)
 
 array = np.arange(8).reshape(2,4)
+left, right = np.split(array, [2], axis=1) #axix=1는 열
+print(left.shape)
+print(right.shape)
